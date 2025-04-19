@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DivulgaCastro</title>
+    <title>My Awesome Site | View Counter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>DivulgaCastro</h1>
-        <p>Welcome to our website!</p>
-    </header>
-    
+
     <div class="container">
-        <div class="main-content">
-            <h2>About Us</h2>
-            <p>This is DivulgaCastro, a platform dedicated to sharing information and resources. Explore our content and stay updated with our latest articles and news.</p>
-            
-            <div class="stats-card">
-                <h3 class="stats-title">Website Analytics</h3>
-                <div class="stats-container">
-                    <div class="stat-box">
-                        <p class="stat-label">Total Views</p>
-                        <p class="stat-value" id="totalViews">Loading...</p>
-                    </div>
-                    <div class="stat-box">
-                        <p class="stat-label">This Month</p>
-                        <p class="stat-value" id="monthlyViews">Loading...</p>
-                    </div>
-                    <div class="stat-box">
-                        <p class="stat-label">Today</p>
-                        <p class="stat-value" id="dailyViews">Loading...</p>
-                    </div>
-                </div>
+        <header>
+            <h1>Welcome to My Site!</h1>
+            <p>This page demonstrates a simple monthly view counter.</p>
+        </header>
+
+        <main>
+            <p>Here's some interesting content about the site...</p>
+            <!-- Add more of your site content here -->
+        </main>
+
+        <footer>
+            <h2>Site Statistics</h2>
+            <div class="view-counter">
+                <p>Views This Month:</p>
+                <!-- IMPORTANT: Replace 'YOUR_USERNAME' and 'YOUR_REPONAME' below! -->
+                <img id="hits-badge" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvitorgallucci.github.io%2FDivulgaCastro%2F&count_bg=%231D91C1&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Monthly+Views&edge_flat=false&period=monthly" alt="Monthly View Counter Badge"/>
+                <!--
+                Explanation of the HITS URL parameters:
+                ?url=          The unique URL of the page you want to track. MUST BE URL ENCODED.
+                               Replace 'https://vitorgallucci.github.io/DivulgaCastro/' with your actual GitHub Pages URL.
+                &count_bg=     Background color for the count part (hex code without #).
+                &title_bg=     Background color for the title part (hex code without #).
+                &icon=         Optional: icon name from simpleicons.org
+                &icon_color=   Color for the icon.
+                &title=        Text for the title part (use + for spaces).
+                &edge_flat=    true or false for flat/rounded edges.
+                &period=monthly Tells HITS to reset the counter monthly.
+                -->
             </div>
-        </div>
-        
-        <footer class="footer">
-            <p>© 2025 DivulgaCastro. All rights reserved.</p>
-            <p>Last updated: <span id="lastUpdated"></span></p>
+             <p class="footer-note">Counter provided by <a href="https://hits.seeyoufarm.com" target="_blank" rel="noopener noreferrer">HITS</a>.</p>
         </footer>
     </div>
 
